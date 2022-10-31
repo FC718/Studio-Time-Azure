@@ -5,7 +5,9 @@ const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 // GET /studios (display all studios)
 router.get('/', studiosCtrl.index);
-
+// router.get('/about', studiosCtrl.about);
+// Get /studios/ new
+router.get('/new', studiosCtrl.new);
 router.get('/new, ensureLoggedIn, studiosCtrl.new');
 
 module.exports = router;

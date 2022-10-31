@@ -3,7 +3,7 @@ var router = express.Router();
 const passport = require('passport');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('studios', {
+  res.render('index', {
     title: 'Studio Time'
   });
 });
@@ -23,14 +23,15 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/',
-    failureRedirect: '/'
+    successRedirect: '/studios',
+    failureRedirect: '/studios'
   }
 ));
 
 router.get('/logout', function(req, res){
   req.logout(function() {
-    res.redirect('/');
+    // Change path for landing page if it seems fit.
+    res.redirect('/studios');
   });
 });
 
