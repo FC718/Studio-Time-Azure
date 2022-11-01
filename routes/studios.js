@@ -16,4 +16,6 @@ router.get('/about', studiosCtrl.about);
 
 router.post('/', studiosCtrl.create);
 
+router.get('/contact', studiosCtrl.contact);
+
 module.exports = router;
