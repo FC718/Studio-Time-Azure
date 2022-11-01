@@ -23,7 +23,8 @@ function about(req, res) {
 
 // Takes me to a page
 function newStudio (req, res) {
-    res.render('studios/new', {title: 'Studios'} )
+    res.render('studios/new', {title: 'New Studios'} )
+
 }
 
 function create(req, res) {
