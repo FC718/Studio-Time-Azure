@@ -18,4 +18,6 @@ router.post('/', studiosCtrl.create);
 
 router.get('/contact', studiosCtrl.contact);
 
+router.get('/booking', studiosCtrl.booking);
+
 module.exports = router;

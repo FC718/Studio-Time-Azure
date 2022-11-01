@@ -51,7 +51,7 @@ const studioSchema = new Schema({
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
-        required: true
+        // required: true
       },
       userName: String,
       userAvatar: String

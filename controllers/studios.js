@@ -1,4 +1,3 @@
-const studio = require("../models/studio");
 const Studio = require("../models/studio");
 
 module.exports = {
@@ -7,7 +6,8 @@ module.exports = {
     new: newStudio,
     create,
     show,
-    contact   
+    contact,
+    booking   
 }
 
 function index(req, res) {
@@ -38,4 +38,8 @@ function show(req, res) {
 
 function contact(req, res) {
     res.render('studios/contact', { title: "Contact"}) 
+}
+
+function booking(req,res) {
+    res.render('studios/booking', {title: "Booking"})
 }

@@ -39,3 +39,8 @@ nav > img {
   object-fit: contain;
   margin-right: auto;
 }
+
+img {
+  max-width: 35%;
+  height: auto;
+}
