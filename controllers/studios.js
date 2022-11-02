@@ -25,6 +25,7 @@ function about(req, res) {
 
 // Takes me to a page
 function newStudio (req, res) {
+    Studio.findById(req.params.id, function(err, studio){})
     res.render('studios/new', {title: 'New Studios'} )
 }
 
@@ -32,8 +33,20 @@ function create(req, res) {
     res.redirect('/studios')
 }
 
+// function show(req, res) {
+//     Studio.findById(req.params.id)
+//     (function(err, studio){
+//         res.render('studios/show', { title: "Studio Detail", studio })
+//     })
+// }
+
 function show(req, res) {
-    res.render('studios/show', { title: "Studio Detail" })
+    Studio.findById(req.params.id, function(err, studio) {
+        res.render('studios/show', {
+            title: 'Studio',
+            studio
+        });
+    });
 }
 
 function contact(req, res) {

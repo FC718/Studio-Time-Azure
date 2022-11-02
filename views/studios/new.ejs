@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 <h2>Book a studio</h2>
-<form action="/" method="POST"></form>
+<form action="/studios/<%= studio._id%>" method="POST">
 
 <h2>Studio A</h2>
 <p>Podcasting!</p>
@@ -15,12 +15,14 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhRxWf1-hjVkp_a0bSJww9QHCjTq0I3Zurw&usqp=CAU" alt="">
 <br>
 <label>Studios</label>
+<p>NEW DEPLOYMENT</p>
 <select name="studio">
     <option value ="Studio A">A Room</option>
     <option value="Studio B">B Room</option>
     <option value="Studio C">C Room</option>
 </select>
 <button type="submit" value="submit">submit</button>
+</form>
 
 
 

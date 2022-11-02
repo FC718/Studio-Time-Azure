@@ -15,3 +15,4 @@ Promise.all([p1])
     console.log(results);
     return Studio.create(data.studios);
   })
+  .then(process.exit);
