@@ -38,8 +38,9 @@ const studioSchema = new Schema({
     session: {
         type: Date,
         default: function() {
-        let today = new Date();
-        return today.setFullYear(today.getFullYear()+1);
+            let today = new Date();
+            return today.setFullYear(today.getFullYear()+1);
+        }
     },
     description: {
         type: String,
@@ -52,13 +53,12 @@ const studioSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'User',
         required: true
-      },
-      userName: String,
-      userAvatar: String
     },
+    userName: String,
+    userAvatar: String,
     reviews: [reviewSchema]
-    }, {
-      timestamps: true,
+}, {
+    timestamps: true,
 });
 
 

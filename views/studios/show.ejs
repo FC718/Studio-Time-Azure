@@ -1,12 +1,17 @@
 <%- include('../partials/header')%>
 
-<!-- <section id="show-page">
-    <div>Title: </div>
-    <div><%= game.title %></div>
-    <div>Release Year: </div>
-    <div><%= game.releaseDate %></div>
-    <div>Company: </div>
-    <div><%= game.company %></div>
-</section> -->
-<p>HI HELLO</p>
+    <tr>
+        <td><%= studio.name%></td>
+        <td><img src="<%= studio.img%>" alt="failed to display"></td>
+        <td>$<%= studio.price%></td>
+        <td><%= studio.session%></td>
+        <td><%= studio.description %></td>
+        <td><%= studio.category %></td>
+        <td><%= studio.user %></td>
+    </tr>
+
+  
+    </tbody>
+</table>
+
 <%- include('../partials/footer')%>

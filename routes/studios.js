@@ -23,4 +23,7 @@ router.get('/booking', studiosCtrl.booking);
 // GET METHOD /stuios/:id
 router.get('/studios/:id', studiosCtrl.show)
 
+
+router.get('/:id', studiosCtrl.show);
+
 module.exports = router;
