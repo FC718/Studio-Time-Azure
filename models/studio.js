@@ -46,19 +46,20 @@ const studioSchema = new Schema({
     },
     category: {
         type: String,
-        enum: ['Podcast', 'Rehearsal', 'Recording', 'Film and Post']
+        enum: ['Podcast', 'Rehearsal', 'Recording', 'Film']
     },
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
-        // required: true
+        required: true
       },
       userName: String,
       userAvatar: String
     },
     reviews: [reviewSchema]
     }, {
-      timestamps: true 
+      timestamps: true,
 });
+
 
 module.exports = mongoose.model('Studio', studioSchema);

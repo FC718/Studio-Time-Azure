@@ -25,20 +25,20 @@ function about(req, res) {
 
 // Takes me to a page
 function newStudio (req, res) {
-    Studio.findById(req.params.id, function(err, studio){})
     res.render('studios/new', {title: 'New Studios'} )
 }
 
 function create(req, res) {
-    res.redirect('/studios')
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name
+    req.body.userAvatar = req.user.avatar
+    const studio = new Studio(req.body);
+    studio.save(function (err) {
+        if (err) return res.redirect('studios/new');
+        res.redirect('/studios')
+    });
 }
 
-// function show(req, res) {
-//     Studio.findById(req.params.id)
-//     (function(err, studio){
-//         res.render('studios/show', { title: "Studio Detail", studio })
-//     })
-// }
 
 function show(req, res) {
     Studio.findById(req.params.id, function(err, studio) {

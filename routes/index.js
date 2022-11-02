@@ -22,15 +22,15 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/studios',
-    failureRedirect: '/studios'
+    successRedirect: '/',
+    failureRedirect: '/error'
   }
 ));
 
 router.get('/logout', function(req, res){
   req.logout(function() {
     // Change path for landing page if it seems fit.
-    res.redirect('/studios');
+    res.redirect('/');
   });
 });
 
