@@ -7,7 +7,10 @@ module.exports = {
     create,
     show,
     contact,
-    booking   
+    booking,
+    delete: deleteStudio,
+    edit,
+    update 
 }
 
 function index(req, res) {
@@ -55,4 +58,16 @@ function contact(req, res) {
 
 function booking(req,res) {
     res.render('studios/booking', {title: "Booking"})
+}
+
+function deleteStudio(req, res) {
+
+}
+
+function edit(req, res) {
+
+}
+
+function update(req, res) {
+
 }
