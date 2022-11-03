@@ -1,24 +1,32 @@
 <%- include('../partials/header') %>
-
+<body style="background-color: orange;">
+</body>
+<div class="details">
     <% studios.forEach(function(s) { %>
         <tr>
             <td>
                 <%= s.studios%>
             </td>
+            <br>
             <td>
                 <%= s.image%>
             </td>
+            <br>
             <td>
                 <%= s.price%>
             </td>
+            <br>
             <td>
                 <%= s.details%>
             </td>
-            <td><a href="/studios/<%=s._id%>">Details</a></td>
+            <br>
+            <td>
+                <a href="/studios/<%=s._id%>">Details</a>
+            </td>
         </tr>
 
         <% }); %>
             </tbody>
             </table>
-
+        </div>
             <%- include('../partials/footer') %>
