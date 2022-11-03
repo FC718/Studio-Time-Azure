@@ -9,12 +9,12 @@ router.get('/', studiosCtrl.index);
 // router.get('/about', studiosCtrl.about);
 
 // Get /studios/ new
-router.get('/new',ensureLoggedIn, studiosCtrl.new);
+router.get('/new', ensureLoggedIn, studiosCtrl.new);
 // router.get('/new, ensureLoggedIn, studiosCtrl.new');
 
 router.get('/about', studiosCtrl.about);
 
-router.post('/',ensureLoggedIn, studiosCtrl.create);
+router.post('/', ensureLoggedIn, studiosCtrl.create);
 
 router.get('/contact', studiosCtrl.contact);
 

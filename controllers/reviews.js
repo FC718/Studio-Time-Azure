@@ -47,21 +47,21 @@ function editReview(req, res) {
         // https://mongoosejs.com/docs/subdocs.html
         const review = studio.reviews.id(req.params.id);
         // Render the reviews/edit.ejs template, passing to it the comment
-        res.render('reviews/edit', { title: 'Reviews',review });
+        res.render('reviews/edit', { title: 'Reviews', review });
     });
-} 
+}
 
 function deleteReviews(req, res) {
     Studio.findOne({
         'reviews._id': req.params.id,
         'reviews.user': req.user._id
-      }).then(function(studio) {
+    }).then(function (studio) {
         if (!studio) return res.redirect('/studios');
         studio.reviews.remove(req.params.id);
-        studio.save().then(function() {
-          res.redirect(`/studios/${studio._id}`);
-        }).catch(function(err) {
-          return next(err);
+        studio.save().then(function () {
+            res.redirect(`/studios/${studio._id}`);
+        }).catch(function (err) {
+            return next(err);
         });
-      });
-    }
+    });
+}

@@ -1,22 +1,22 @@
 <%- include('../partials/header')%>
 
-<h2><%= title %></h2>
-        <form id="edit-review" action="/reviews/<%= review._id %>?_method=PUT" method="POST" >
-            <label>Review:</label>
-            <textarea name="content" value="<%= review.content %>"></textarea>
-            <label>Rating:</label>
-            <select name="rating" value="<%= review.rating%>">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5" selected>5</option>
-            </select>
-            <input type="submit" value="EDIT Review">
-        </form>
-
-        
-
-<%- include('../partials/footer')%>
+    <h2>
+        <%= title %>
+    </h2>
+    <form id="edit-review" action="/reviews/<%= review._id %>?_method=PUT" method="POST">
+        <label>Review:</label>
+        <textarea name="content" value="<%= review.content %>"></textarea>
+        <label>Rating:</label>
+        <select name="rating" value="<%= review.rating%>">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+        </select>
+        <input type="submit" value="EDIT Review">
+    </form>
 
 
+
+    <%- include('../partials/footer')%>
