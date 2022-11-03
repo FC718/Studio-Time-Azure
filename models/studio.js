@@ -21,7 +21,7 @@ const reviewSchema = new mongoose.Schema({
     userName: String,
     userAvatar: String
 }, {
-    timestamps: true 
+    timestamps: true
 });
 
 const studioSchema = new Schema({
@@ -37,9 +37,9 @@ const studioSchema = new Schema({
     },
     session: {
         type: Date,
-        default: function() {
+        default: function () {
             let today = new Date();
-            return today.setFullYear(today.getFullYear()+1);
+            return today.setFullYear(today.getFullYear() + 1);
         }
     },
     description: {

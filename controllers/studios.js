@@ -10,25 +10,25 @@ module.exports = {
     booking,
     delete: deleteStudio,
     edit,
-    update 
+    update
 }
 
 function index(req, res) {
     // Studo.find is searching / querying through a studio model 
     // to get the information.
-    Studio.find({ }, function(err, studios){
-    res.render('studios/index', {title: '', studios})
+    Studio.find({}, function (err, studios) {
+        res.render('studios/index', { title: '', studios })
     })
 }
 
 function about(req, res) {
     console.log('about');
-    res.render('studios/about', {title: 'ABOUT PAGE'} )
+    res.render('studios/about', { title: 'ABOUT PAGE' })
 }
 
 // Takes me to a page
-function newStudio (req, res) {
-    res.render('studios/new', {title: 'New Studios'} )
+function newStudio(req, res) {
+    res.render('studios/new', { title: 'New Studios' })
 }
 
 function create(req, res) {
@@ -44,7 +44,7 @@ function create(req, res) {
 
 
 function show(req, res) {
-    Studio.findById(req.params.id, function(err, studio) {
+    Studio.findById(req.params.id, function (err, studio) {
         res.render('studios/show', {
             title: 'Studio',
             studio
@@ -53,11 +53,11 @@ function show(req, res) {
 }
 
 function contact(req, res) {
-    res.render('studios/contact', { title: "Contact"}) 
+    res.render('studios/contact', { title: "Contact" })
 }
 
-function booking(req,res) {
-    res.render('studios/booking', {title: "Booking"})
+function booking(req, res) {
+    res.render('studios/booking', { title: "Booking" })
 }
 
 function deleteStudio(req, res) {
