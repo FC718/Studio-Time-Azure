@@ -5,7 +5,7 @@ This app/webpage was made for creatives to add studios to a database where other
 # Screenshot
 
 
-![Imgur](https://i.imgur.com/3DldMJ5.png)
+
 
 
 # Technologies Used
