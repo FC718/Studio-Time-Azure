@@ -13,7 +13,7 @@ https://trello.com/b/g2Ob8rTJ/studio-time
 
 ![Imgur](https://i.imgur.com/qFDCAfa.png)
 
-![Imgur](https://i.imgur.com/qFDCAfa.png)
+![Imgur](https://i.imgur.com/DRHMlbm.png)
 
 # Technologies Used
 
