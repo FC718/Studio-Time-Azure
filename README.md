@@ -2,6 +2,10 @@
 # <STUDIO>
 This app/webpage was made for creatives to add studios to a database where other creatives can find studios /creative workspaces. The features for the application is that users when logged in can leave reviews, update, and delete them. 
 
+# TrelloPlanning
+
+https://trello.com/b/g2Ob8rTJ/studio-time
+
 # Screenshot
 
 
@@ -9,12 +13,11 @@ This app/webpage was made for creatives to add studios to a database where other
 
 ![Imgur](https://i.imgur.com/qFDCAfa.png)
 
-![Imgur](![Imgur](https://i.imgur.com/qFDCAfa.png)
+![Imgur](https://i.imgur.com/qFDCAfa.png)
 
 # Technologies Used
 
 -Express JS
-https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
 - HTML
 - CSS
 - JavaScript
