@@ -5,11 +5,7 @@ This app/webpage was made for creatives to add studios to a database where other
 # Screenshot
 
 
-<<<<<<< HEAD
-
-=======
 ![Imgur](https://i.imgur.com/7ZtURhO.png)
->>>>>>> acef883 (readme)
 
 ![Imgur](https://i.imgur.com/qFDCAfa.png)
 
