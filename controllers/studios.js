@@ -1,4 +1,6 @@
 const Studio = require("../models/studio");
+const uploadFile = require('../config/upload-file');
+
 
 module.exports = {
     about,
@@ -31,10 +33,14 @@ function newStudio(req, res) {
     res.render('studios/new', { title: 'New Studios' })
 }
 
-function create(req, res) {
+async function create(req, res) {
     req.body.user = req.user._id;
     req.body.userName = req.user.name
     req.body.userAvatar = req.user.avatar
+    if (req.file) {
+        const photoUrl = await uploadFile(req.file);
+        req.body.img = photoUrl;
+    }
     const studio = new Studio(req.body);
     studio.save(function (err) {
         if (err) return res.redirect('studios/new');

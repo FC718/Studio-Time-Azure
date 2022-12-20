@@ -44,7 +44,7 @@ nav > img {
 }
 
 img {
-  max-width: 120.5%;
+  max-width: 100.5%;
   height: auto;
 }
 
@@ -104,4 +104,8 @@ select {
   border-radius: 4px;
   background-color: #f1f1f1;
 }
+
+/* textarea {
+  resize: none;
+} */
 

@@ -5,7 +5,7 @@
         <td>
             <%= studio.name%>
         </td>
-        <td><img src="<%= studio.img%>" alt="failed to display"></td>
+        <td><img src="<%= studio.img%>" alt="studio"></td>
         <td>$<%= studio.price%>
             <br>
         </td>
@@ -34,7 +34,7 @@
     <% if (user) { %>
         <form id="add-review-form" method="POST" action="/studios/<%= studio._id %>/reviews">
             <label>Review:</label>
-            <textarea name="content"></textarea>
+            <textarea resize:nonename="content"></textarea>
             <label>Rating:</label>
             <select name="rating">
                 <option value="1">1</option>

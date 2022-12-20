@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const upload = require("multer")();
 const studiosCtrl = require('../controllers/studios');
 const ensureLoggedIn = require('../config/ensureLoggedIn');
 
@@ -14,7 +15,7 @@ router.get('/new', ensureLoggedIn, studiosCtrl.new);
 
 router.get('/about', studiosCtrl.about);
 
-router.post('/', ensureLoggedIn, studiosCtrl.create);
+router.post('/', ensureLoggedIn, upload.single('photo-file'), studiosCtrl.create);
 
 router.get('/contact', studiosCtrl.contact);
 

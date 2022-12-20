@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/800d691e-4835-479f-9129-93f234381835/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/StudioTime",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
