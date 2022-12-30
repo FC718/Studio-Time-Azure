@@ -29,7 +29,7 @@ https://trello.com/b/g2Ob8rTJ/studio-time
 
 # Getting Started
 
-[Click to visit and review a Studio!](https://studio-time.herokuapp.com/)
+[Click to visit and review a Studio!]https://studiotime.azurewebsites.net
 
 # Next Steps
 
